@@ -1,0 +1,9 @@
+python-telegram-bot==13.17
+openai-whisper
+torch
+numpy
+scikit-learn
+joblib
+python-dotenv
+ffmpeg-python  # optional: we call ffmpeg via CLI
+requests

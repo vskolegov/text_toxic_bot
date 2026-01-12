@@ -1,0 +1,62 @@
+# .gitignore for text_toxic_bot
+# Keep source, configs and small assets; ignore envs, caches and large model weights.
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Editor configs
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+
+# Notebook
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database / local state
+*.sqlite3
+*.db
+
+# ML models
+*.pkl
+*.pth
+*.pt
+*.onnx
+
+# ffmpeg temporary files
+*.wav.tmp
+
+# Model weight files (usually large) — track with Git LFS instead of git
+# Uncomment to ignore model weights completely:
+# text_toxic_bot/models/*.pth
+# text_toxic_bot/models/*.pt
+# text_toxic_bot/models/*.bin
+# text_toxic_bot/models/*.ckpt
+
+# Alternatively, ignore by extension globally
+*.pth
+*.pt
+*.bin
+*.ckpt
+
+# If you want to keep some small model artifacts, add exceptions, for example:
+# !text_toxic_bot/models/README.md

@@ -1,0 +1,10 @@
+{
+  "903721755": {
+    "model": "bilstm",
+    "mode_selection": "per_request"
+  },
+  "637969259": {
+    "mode_selection": "per_request",
+    "model": "logreg"
+  }
+}
