@@ -76,10 +76,10 @@ uvicorn text_toxic_bot.api:app --reload --port 8000
 - ffmpeg не найден: установите ffmpeg и добавьте в PATH.
 
 Пример команд для диагностики:
-# Проверить токен
+### Проверить токен
 curl -s "https://api.telegram.org/bot$TELEGRAM_TOKEN/getMe" | jq
 
-# Проверить что ffmpeg доступен
+### Проверить что ffmpeg доступен
 ffmpeg -version
 
 ## Разработка и тесты
